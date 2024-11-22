@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .font-overpass {
+      font-family: "Overpass", sans-serif;
+      font-weight: 400;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <style>
+    .bg-c-orange {
+      background-color: hsl(25, 97%, 53%);
+    }
+
+    .onHover:hover {
+      background-color: hsl(25, 97%, 53%);
+    }
+
+    .text-c-orange {
+      color: hsl(25, 100%, 67%);
+    }
+
+    .letter-spacing {
+      letter-spacing: 0.1rem;
+    }
+  </style>
+
+</head>
+
+<body class="min-h-screen font-overpass text-white bg-gray-950 flex flex-col gap-6 justify-center items-center p-6">
+
+  <div id="rating-card" class=" md:w-[500px] bg-gray-800 flex
+     flex-col gap-2 md:gap-4  px-6 py-8 lg:p-12  rounded-xl md:rounded-[40px]">
+    <div class="">
+      <button class="bg-gray-700 text-center w-10 h-10 md:w-12 md:h-12 flex justify-center items-center rounded-full ">
+        <img src="./images/icon-star.svg" alt="star-icon" class="w-3 h-3 md:w-4 md:h-4">
+      </button>
+    </div>
+    <p class="text-[26px] md:text-4xl mt-4 text-white font-medium">How did we do?</p>
+    <p class="text-slate-400 text-[14px] md:text-[18px]">Please let us know how we did with your support request. All
+      feedback is
+      appreciated
+      to help us improve our offering!</p>
+    <div id="btn-container"
+      class="w-full flex flex-row justify-between items-center mt-2  text-gray-300 text-[14px] md:text-[20px]">
+      <button id="btn-1"
+        class="bg-gray-700 onHover text-center w-12 h-12 md:w-14 md:h-14  rounded-full "><span>1</span></button>
+      <button id="btn-2"
+        class="bg-gray-700 onHover text-center w-12 h-12 md:w-14 md:h-14  rounded-full "><span>2</span></button>
+      <button id="btn-3"
+        class="bg-gray-700 onHover text-center w-12 h-12 md:w-14 md:h-14  rounded-full "><span>3</span></button>
+      <button id="btn-4"
+        class="bg-gray-700 onHover text-center w-12 h-12 md:w-14 md:h-14  rounded-full "><span>4</span></button>
+      <button id="btn-5"
+        class="bg-gray-700 onHover text-center w-12 h-12 md:w-14 md:h-14  rounded-full "><span>5</span></button>
+    </div>
+
+
+    <button id="submit-button"
+      class="bg-c-orange active:bg-white active:text-black p-3 md:p-4 mt-4 font-bold text-[14px] md:text-lg text-slate-900 letter-spacing rounded-full">SUBMIT</button>
+  </div>
+  </div>
+
+
+  <div id="thankyou-card"
+    class=" md:w-[500px] bg-gray-800  hidden flex-col items-center gap-2 md:gap-4  px-6 py-8 lg:p-12  rounded-xl md:rounded-[40px] ">
+    <img src="./images/illustration-thank-you.svg" class="h-30">
+    <div class="bg-gray-700 flex justify-center items-center px-3 py-2 md:px-6 md:py-2 mt-5 rounded-full">
+      <p id="display-rating" class="text-base text-center text-c-orange font-normal"></p>
+    </div>
+
+
+    <p class="text-[26px] md:text-4xl mt-4 text-white font-medium">Thank you</p>
+
+    <p class="text-slate-400 text-[14px] md:text-[18px] text-center">We appreciate you taking the time to give a rating.
+      If you
+      ever
+      need more
+      support,
+      don’t hesitate to get in touch!</p>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">pratham mhavale</a>.
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+
+</html>
